@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Admin Login</h2>
+    <form action="/admin_login" method="post">
+      <div class="form-group">
+        <label for="adminName">Admin Name:</label>
+        <input type="text" class="form-control" id="adminName" name="adminName" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <div id="error-message" style="color:red; display:none;">Admin name or password is incorrect</div>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('form').on('submit', function(event) {
+        event.preventDefault();
+        var adminName = $('#adminName').val();
+        var password = $('#password').val();
+        if (adminName !== 'admin' || password !== 'admin1234') {
+          $('#error-message').show();
+        } else {
+          this.submit();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+<style>
+  body { background-image: url(https://t3.ftcdn.net/jpg/12/25/01/52/360_F_1225015246_p7ISJyVZeq0mJIjCqUo7kr8PYL26bjeP.jpg); background-size: cover; background-attachment: fixed; }
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+  }
+  .container {
+    padding-left: 25%;
+    padding-right: 25%;
+    margin: auto;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.50);
+    color: rgba(255, 255, 255, 0.211);
+  }
+  h2 {
+    text-transform: uppercase;
+    color: #ffffff !important;
+  }
+  .form-group label {
+    color: #ffffff;
+  }
+  .btn {
+    background-color: #5cb85c;
+    color: white;
+    width: 50%;
+}
+input[type=text], input[type=password] {
+  width: 50%;
+}
+</style>

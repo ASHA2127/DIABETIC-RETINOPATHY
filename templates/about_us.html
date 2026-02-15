@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Diabetic Retinopathy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hero {
+      background-color: #003366;
+      color: white;
+      padding: 70px 0;
+      text-align: center;
+    }
+    .section {
+      padding: 60px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .team-card {
+      border: 1px solid #dee2e6;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 30px;
+    }
+    footer {
+      background-color: #1c1c1c;
+      color: #aaa;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+    .navbar-brand {
+      font-weight: bold;
+    }
+    .hero h1 {
+      font-size: 2.0rem;
+    }
+    .hero p {
+      font-size: 1.5rem;
+    }
+    .section h2 {
+      font-size: 1.5rem;
+    }
+    .section p {
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="dashboard.php">Diabetic Retinopathy</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li><a class="nav-link active" href="{{ url_for('home') }}">Home</a></li>
+        <li><a class="nav-link active" href="{{ url_for('about') }}">About</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1 class="display-4">About Diabetic Retinopathy</h1>
+    <p class="lead">Welcome to the Diabetic Retinopathy Detection System</p>
+  </div>
+</section>
+
+<!-- Mission Section -->
+<section class="section text-center">
+  <div class="container">
+    <h2 class="mb-4">The challenges</h2>
+    <p class="lead">Worldwide, 1 in 11 adults (425 million people) have diabetes. Three quarters live in low- and middle-income countries (LMICs). This number is dramatically increasing due to lifestyle changes, population growth and ageing.
+        Diabetic retinopathy (DR) is the leading cause of preventable blindness among adults of working age, occurring in almost 75% of people with diabetes within fifteen years of diagnosis. Sight loss from DR can be prevented through good diabetic control, annual screening of the eyes for signs of DR and timely treatment.</p>
+  </div>
+  <section class="section text-center">
+    <div class="container">
+      <h2 class="mb-4">The solution</h2>
+      <p class="lead">Our Diabetic Retinopathy Detection System addresses these challenges by providing an accessible and efficient way to analyze retinal images. Users can upload their images, and our system uses advanced machine learning algorithms to assess the severity of diabetic retinopathy. The system provides:
+        Instant Analysis: Quick and accurate classification of the condition.
+        User -Friendly Interface: An easy-to-navigate platform that empowers patients to take charge of their eye health.
+        Personalized Recommendations: Tailored dietary and treatment suggestions based on the severity of the condition, helping users make informed decisions.</p>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
