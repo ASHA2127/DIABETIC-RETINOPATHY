@@ -137,7 +137,7 @@ The dataset consists of retinal fundus images categorized into:
 
 ## 👩‍💻 Developed By
 
-Asha  
+Asha H N 
 Master of Computer Applications (MCA)  
 AI & Machine Learning Enthusiast  
 Academic Year: 2025–2026
