@@ -6,3 +6,4 @@ keras
 Pillow
 gunicorn
 tqdm
+tflearn
