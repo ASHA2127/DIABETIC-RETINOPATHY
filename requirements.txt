@@ -1,0 +1,7 @@
+Flask
+numpy
+opencv-python
+tensorflow
+keras
+sqlite3
+Pillow
